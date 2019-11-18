@@ -1,25 +1,232 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flagContainer {
+  height: 20vmin;
+  width:36vmin;
+  background-color: pink;
+  border: 1px solid black;
+}
+
 /* Indonesia */
+#indonesia {
+  background-color: white;
+}
+#indonesia .section { /*selecting class section divs that are descendents of id indonesia*/
+    height: 50%;
+  /* background-color:white; */
+}
+.redBackground {
+    background-color: red;
+}
+/* #indonesia .section:first-child { /*selecting class section that is the first child of id indonesia*/
+/*  background-color: red;
+} */
 
 /* Colombia */
-
+#columbia {
+  background-color: blue;
+}
+#columbia .section {
+  height: 50%;
+}
+#columbia .subsection {
+  height: 50%;
+}
+#columbia .subsection:nth-child(2) {
+  background-color: red;
+}
+#columbia > .section:nth-child(1) {
+  background-color: yellow;
+}
+#columbia .subsection:nth-child(2) {
+  background-color: red;
+}
 /* Ireland */
+#ireland {
+  /*font-size: 0; to eliminte the space between the divs in HTML*/
+  display: flex; /*makes children divs sit side by side; makes height 100% by default*/
+  background-color: white;
+}
+#ireland > .thirdFlagSection {
+  /*float: left can be used with display flex then set width to 33.33% and height to 100%*/
 
+  display: inline-block;
+  width: 100%;/*parent must be flex, and this sets the child divs to be 100% possible while still all fitting in the parent div*/
+  /* height: 100%; */
+  /* background-color: lime; to differenciate each sections*/
+}
+#ireland > .thirdFlagSection:nth-child(1) {
+  background-color: green;
+}
+#ireland > .thirdFlagSection:nth-child(3) {
+  background-color: orange;
+}
 /* France */
+#france {
+  font-size: 0;
+  display: relative;
+  background-color: white;
+}
+#france > .thirdFlagSection {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+}
+#france > .thirdFlagSection:nth-child(1) {
+  background-color: blue;
+}
+#france > .thirdFlagSection:nth-child(3) {
+  background-color: red;
+}
 
 /* Benin */
-
+#benin {
+  display: flex;
+}
+#benin > .section {
+  display:inline-block;
+  width: 38%;
+}
+#benin > .section2 {
+  display:inline-block;
+  width: 62%;
+  background-color: yellow;
+}
+#benin > .section:nth-child(1) {
+  background-color: green;
+}
+#benin .subsection {
+  height: 50%;
+}
+#benin .subsection:nth-child(2) {
+  background-color: red;
+}
 /* Sweden */
-
+#sweden {
+  background-color: dodgerblue;
+  position: relative;
+}
+#sweden .stripe1, .stripe2 {
+  position: absolute;
+  background-color: yellow;
+}
+#sweden .stripe1 {
+  width: 15%;
+  height: 100%;
+  left: 30%;
+}
+#sweden .stripe2 {
+  width: 100%;
+  height: 20%;
+  top: 40%;
+}
 /* Switzerland */
+#switzerland.flagContainer {
+  position: relative;
+  width: 20vmin;
+  height: 20vmin;
+  background-color: red;
+}
+#switzerland .stripe:nth-of-type(1) {
+  position: absolute;
+  width: 22%;
+  height: 70%;
+  background-color: white;
+  top: 14%;
+  left: 41%;
+}
+#switzerland .stripe:nth-of-type(2) {
+  position: absolute;
+  width: 70%;
+  height: 21%;
+  background-color: white;
+  left: 16%;
+  top: 38%;
+}
 
 /* Tonga */
-
+#tonga.flagContainer {
+  position: relative;
+  background-color: red;
+}
+#tonga .miniFlag {
+  width: 38%;
+  height: 50%;
+  background-color: white;
+}
+#tonga .stripe:nth-of-type(1) {
+  position: absolute;
+  width: 6%;
+  height: 34%;
+  background-color: red;
+  left: 16%;
+  top: 7%;
+}
+#tonga .stripe:nth-of-type(2) {
+  position: absolute;
+  width: 21%;
+  height: 12%;
+  background-color: red;
+  top: 19%;
+  left: 9%;
+}
 /* Japan */
-
+#japan {
+  background-color: white;
+  display: flex;
+}
+#japan .circle {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 50%;
+  margin: auto
+}
 /* Canada */
-
+#canada {
+  background-color: red;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+#canada .mapleFlag {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+}
+#canada .mapleFlag::before {
+  content: '';
+  height: 88%;
+  width: 37%;
+  background-image: url("https://github.com/kumquatpeels/css_flag_challenges/raw/master/assets/images/canada_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: rotateZ(28deg);
+  top: 15%;
+}
 /* Norway */
-
+#norway {
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#norway .whiteStripe1 {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  left: 25%;
+  position: relative;
+}
+#norway .whiteStripe2 {
+  height: 31%;
+  width: 100%;
+  background-color: white;
+}
 /* Greece */
 
 /* Somalia */
