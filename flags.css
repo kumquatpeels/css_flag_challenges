@@ -130,7 +130,7 @@ body {
   height: 20vmin;
   background-color: red;
 }
-#switzerland .stripe:nth-of-type(1) {
+#switzerland .stripe1 {
   position: absolute;
   width: 22%;
   height: 70%;
@@ -138,7 +138,7 @@ body {
   top: 14%;
   left: 41%;
 }
-#switzerland .stripe:nth-of-type(2) {
+#switzerland .stripe2 {
   position: absolute;
   width: 70%;
   height: 21%;
@@ -179,8 +179,8 @@ body {
   display: flex;
 }
 #japan .circle {
-  height: 50px;
-  width: 50px;
+  height: 90px;
+  width: 90px;
   background-color: red;
   border-radius: 50%;
   margin: auto
@@ -210,27 +210,96 @@ body {
 }
 /* Norway */
 #norway {
+  position: relative;
   background: red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+/*stripe1: hori
+  stripe1: vert*/
+
 #norway .whiteStripe1 {
+  position: absolute;
   height: 100%;
   width: 20%;
   background-color: white;
   left: 25%;
-  position: relative;
 }
 #norway .whiteStripe2 {
+  position: absolute;
   height: 31%;
   width: 100%;
   background-color: white;
 }
+#norway .blueStripe2 {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: blue;
+  top: 34%;
+}
+#norway .blueStripe1 {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+  left: 26%;
+}
 /* Greece */
-
+#greece {
+  /* background-color: skyblue; */
+}
+#greece .crossContainer {
+  position: absolute;
+  background-color: skyblue;
+  width: 6%;
+  height: 11%;
+}
+#greece .horStripe {
+  position: absolute;
+  width: 22%;
+  height: 100%;
+  background-color: white;
+  left: 41%;
+}
+#greece .vertStripe {
+  position: absolute;
+  width: 100%;
+  height: 26%;
+  background-color: white;
+  top: 36%;
+}
+.greeceHor {
+  height: 100%;
+}
+.greeceHor div {
+  /* position: absolute; */
+  background-color: white;
+  width: 100%;
+  height: 11.11%;
+}
+.greeceHor div:nth-child(odd) {
+  /* position: absolute; */
+  background-color: skyblue;
+  width: 100%;
+  height: 11.11%;
+}
 /* Somalia */
-
+#somalia {
+  background-color: skyblue;
+  display: flex;
+}
+#somalia .starContainer {
+  /* background-color: blue; */
+  height: 100%;
+  width: 34%;
+  margin: auto;
+}
+#somalia .starContainer .star {
+  font-size: 500%;
+  color: white;
+}
 /* Chile */
 
 /* Turkey */
